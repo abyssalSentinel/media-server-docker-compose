@@ -15,7 +15,7 @@ services:
     jellyfin:
         container_name: jellyfin
         image: jellyfin/jellyfin:latest
-        restart: unless-stopped
+        restart: always
         network_mode: host
         ports:
             - '8096:8096'
@@ -36,7 +36,7 @@ services:
     sonarr:
         container_name: sonarr
         image: linuxserver/sonarr:latest
-        restart: unless-stopped
+        restart: always
         network_mode: host
         ports:
             - '8989:8989'
@@ -53,7 +53,7 @@ services:
     radarr:
         container_name: radarr
         image: linuxserver/radarr:latest
-        restart: unless-stopped
+        restart: always
         network_mode: host
         ports:
             - '7878:7878'
@@ -70,7 +70,7 @@ services:
     lidarr:
         container_name: lidarr
         image: linuxserver/lidarr:latest
-        restart: unless-stopped
+        restart: always
         network_mode: host
         ports:
             - '8686:8686'
@@ -87,7 +87,7 @@ services:
     bazarr:
         container_name: bazarr
         image: linuxserver/bazarr:latest
-        restart: unless-stopped
+        restart: always
         network_mode: host
         ports:
             - '6767:6767'
@@ -104,7 +104,7 @@ services:
     jackett:
         container_name: jackett
         image: linuxserver/jackett:latest
-        restart: unless-stopped
+        restart: always
         network_mode: host
         ports:
             - '9117:9117'
@@ -121,7 +121,7 @@ services:
     qbittorrent:
         container_name: qbittorrent
         image: linuxserver/qbittorrent:latest
-        restart: unless-stopped
+        restart: always
         network_mode: host
         ports:
             - '6881:6881'
@@ -154,7 +154,7 @@ services:
     netdata:
         container_name: netdata
         image: netdata/netdata:latest
-        restart: unless-stopped
+        restart: always
         network_mode: host
         ports:
             - '19999:19999'
