@@ -66,7 +66,7 @@ services:
             - '${CONFIG_DIR}/radarr:/config'
             - '${MOVIES_DIR}:/movies'
             - '${DOWNLOAD_DIR}:/downloads'
-	
+
     lidarr:
         container_name: lidarr
         image: linuxserver/lidarr:latest
